@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var cadenaTexto = prompt("Ingresa la cadena de texto: ")
+        var array = cadenaTexto.split(" ")
+        var numeroPalabras = array.length
+        document.write('Numero de palabras: ', numeroPalabras, "<br>");
+
+        let primerPalabra = array[0]
+        let ultimaPalabra = array[array.length-1];
+        document.write('Primer palabra: ', primerPalabra, "<br>");
+        document.write('Ultima palabra: ', ultimaPalabra, "<br>");
+
+        let palabrasInversas = array.slice().reverse()
+        document.write('Palabras en orden inverso: ', palabrasInversas.join(" "), "<br>");
+
+        let palabrasOrdenadas = array.slice().sort()
+        document.write('Palabras ordenadas de la A a la Z: ', palabrasOrdenadas.join(" "), "<br>");
+
+        let palabrasDesordenadas = array.slice().sort().reverse()
+        document.write('Palabras ordenadas de la Z a la A: ', palabrasDesordenadas.join(" "), "<br>");
+
+        
+    </script>
+</body>
+</html>
